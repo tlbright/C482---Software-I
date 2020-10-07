@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="697.0" prefWidth="1508.0" style="-fx-background-color: #d9d9d9;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="441.0" layoutX="16.0" layoutY="158.0" stroke="#b9b9b9" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="731.0" />
+      <Label layoutX="66.0" layoutY="56.0" text="Inventory Management System">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="exitBtn" layoutX="1272.0" layoutY="625.0" mnemonicParsing="false" onAction="#exitProgram" prefHeight="46.0" prefWidth="118.0" text="Exit">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" color="#a19f9f" height="70.0" radius="17.0" width="0.0" />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="partSearchBtn" layoutX="247.0" layoutY="188.0" mnemonicParsing="false" onAction="#searchPart" prefHeight="46.0" prefWidth="118.0" text="Search">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" color="#a19f9f" height="70.0" radius="17.0" width="0.0" />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="partSearchText" layoutX="396.0" layoutY="199.0" prefHeight="25.0" prefWidth="277.0" />
+      <Label layoutX="66.0" layoutY="199.0" text="Parts">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="partTable" layoutX="47.0" layoutY="273.0" prefHeight="206.0" prefWidth="670.0">
+        <columns>
+          <TableColumn fx:id="partIDTable" editable="false" prefWidth="163.0" text="Part ID" />
+          <TableColumn fx:id="partNameTable" editable="false" prefWidth="172.0" text="Part Name" />
+            <TableColumn fx:id="partInvTable" editable="false" prefWidth="169.0" text="Inventory Level" />
+            <TableColumn fx:id="partPriceTable" editable="false" prefWidth="165.0" text="Price/Cost per Unit" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="441.0" layoutX="762.0" layoutY="158.0" stroke="#b9b9b9" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="731.0" />
+      <Button fx:id="partAddBtn" layoutX="278.0" layoutY="502.0" mnemonicParsing="false" onAction="#addPartScreen" prefHeight="46.0" prefWidth="118.0" text="Add">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" color="#a19f9f" height="70.0" radius="17.0" width="0.0" />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="partModifyBtn" layoutX="417.0" layoutY="502.0" mnemonicParsing="false" onAction="#modifyPartScreen" prefHeight="46.0" prefWidth="118.0" text="Modify">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" color="#a19f9f" height="70.0" radius="17.0" width="0.0" />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="partDeleteBtn" layoutX="555.0" layoutY="502.0" mnemonicParsing="false" onAction="#deletePart" prefHeight="46.0" prefWidth="118.0" text="Delete">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" color="#a19f9f" height="70.0" radius="17.0" width="0.0" />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="793.0" layoutY="199.0" text="Products">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="productSearchBtn" layoutX="995.0" layoutY="189.0" mnemonicParsing="false" onAction="#searchProduct" prefHeight="46.0" prefWidth="118.0" text="Search">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" color="#a19f9f" height="70.0" radius="17.0" width="0.0" />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="productSearchText" layoutX="1140.0" layoutY="200.0" prefHeight="25.0" prefWidth="277.0" />
+      <Button fx:id="productAddBtn" layoutX="1022.0" layoutY="502.0" mnemonicParsing="false" onAction="#addProductScreen" prefHeight="46.0" prefWidth="118.0" text="Add">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" color="#a19f9f" height="70.0" radius="17.0" width="0.0" />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="productModifyBtn" layoutX="1161.0" layoutY="502.0" mnemonicParsing="false" onAction="#modifyProductScreen" prefHeight="46.0" prefWidth="118.0" text="Modify">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" color="#a19f9f" height="70.0" radius="17.0" width="0.0" />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="productDeleteBtn" layoutX="1293.0" layoutY="502.0" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="46.0" prefWidth="118.0" text="Delete">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" color="#a19f9f" height="70.0" radius="17.0" width="0.0" />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="productTable" layoutX="793.0" layoutY="273.0" prefHeight="206.0" prefWidth="670.0">
+        <columns>
+          <TableColumn fx:id="productIDTable" editable="false" prefWidth="168.0" text="Product ID" />
+          <TableColumn fx:id="productNameTable" editable="false" prefWidth="167.0" text="Product Name" />
+            <TableColumn fx:id="productInvTable" editable="false" prefWidth="163.0" text="Inventory Level" />
+            <TableColumn fx:id="productPriceTable" editable="false" prefWidth="171.0" text="Price per Unit" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
